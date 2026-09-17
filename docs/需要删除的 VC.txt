@@ -1,0 +1,41 @@
+XYSameCityLiveViewController  用不到
+XYConstellationViewController 用不到
+XYSearchViewController 用不到
+XYAddressChooseViewController 应该也是用不到了
+iSailorAddressChooseVC 应该也是用不到了
+
+
+XYViewerResignLiveViewController  也用不到了
+BiaoQianViewController 用不到了
+XYLiveThemeViewController 用不到了
+
+
+XYFindBuyPrettyViewController  用不到了
+
+XYFindTrendsViewController 用不到了
+XYIssueFindViewController 用不到了
+FindTrendDetailViewController 用不到了
+TrendLikeListViewController 用不到了
+XYTrendRecordDetailViewController  用不到了
+
+XYFriendsViewController 用不到了
+XYNicetyFriendsViewController 用不到了
+XYTrendsMessageViewController 用不到了
+
+OtherUserViewController 用不到了
+XYUserOrderViewController 用不到了
+
+XYUserHorseViewController 用不到了
+XYUserMakeUpViewController  用不到了
+BlueVIPViewController 用不到了
+
+XYUserDevoteViewController 用不到了
+InviteRecordViewController 用不到了
+TuiJianController 用不到了
+
+YongJinViewController  用不到了
+
+TuiGuangViewController  用不到了
+MyTeamController  用不到了
+ShouYiController  用不到了
+

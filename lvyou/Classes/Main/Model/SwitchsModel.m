@@ -1,0 +1,20 @@
+// ////////////////////////////////////////////////////////////////////////////
+//
+// Copyright (c)  Shili Technology Co., Ltd.
+// All rights reserved.
+// http://www.shili.com
+//
+// ///////////////////////////////////////////////////////////////////////////
+//
+//  SwitchsModel.m
+//  beibei
+//
+//  Created by dev on 16/8/26.
+//  Copyright © 2016年 Shili. All rights reserved.
+//
+
+#import "SwitchsModel.h"
+
+@implementation SwitchsModel
+
+@end

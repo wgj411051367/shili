@@ -1,0 +1,20 @@
+// ////////////////////////////////////////////////////////////////////////////
+//
+// Copyright (c)  Shili Technology Co., Ltd.
+// All rights reserved.
+// http://www.shili.com
+//
+// ///////////////////////////////////////////////////////////////////////////
+//
+//  UserModel.m
+//  beibei
+//
+//  Created by dev on 16/6/15.
+//  Copyright © 2016年 Shili. All rights reserved.
+//
+
+#import "UserModel.h"
+
+@implementation UserModel
+
+@end

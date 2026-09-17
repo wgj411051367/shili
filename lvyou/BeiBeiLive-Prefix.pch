@@ -1,0 +1,40 @@
+//
+//  BeiBeiLive-Prefix.pch
+//  beibei
+//
+//  Created by Sailor on 16/7/25.
+//  Copyright © 2016年 iSailor. All rights reserved.
+//
+
+#ifndef BeiBeiLive_Prefix_pch
+#define BeiBeiLive_Prefix_pch
+#ifdef __OBJC__
+// CommonLibrary与TCAdapter自定义控制
+
+// CommonLibrary
+//#import "CommonLibrary.h"
+
+// TCAdapter
+//#import "TCAdapterHeader.h"
+
+//#import "TCShowModelHeader.h"
+
+#import "Constants.h"
+#import "UIColor+Master.h"
+#import "Masonry.h"
+#import "NSString+Common.h"
+#import "UIAlertView+BlockExtension.h"
+#import "UIActionSheet+BlockExtension.h"
+#import <Lottie/Lottie.h>
+#import "UIScrollView+EmptyDataSet.h"
+#import "SDWebImage.h"
+#import "UIView+Toast.h"
+#endif /* BeiBeiLive_Prefix_pch */
+#endif
+
+//4.3 仅在 IOS 系统上支持 SO_NOSIGPIPE
+#if defined(SO_NOSIGPIPE) && !defined(MSG_NOSIGNAL)
+// We do not want SIGPIPE if writing to socket.
+ const int value = 1;
+ setsockopt(fd, SOL_SOCKET, SO_NOSIGPIPE, &value, sizeof(int));
+#endif

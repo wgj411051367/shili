@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="-120" id="KGk-i7-Jjw" customClass="TaskTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="39"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="139" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEd-4X-kgU">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="39"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Rqg-xg-5SI"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g5i-s1-dqc">
+                        <rect key="frame" x="6" y="0.0" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="g5i-s1-dqc" secondAttribute="height" multiplier="1:1" id="lFE-OW-LhJ"/>
+                            <constraint firstAttribute="width" constant="20" id="okT-Ra-cSv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收到5/6个玫瑰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u70-gL-Uay">
+                        <rect key="frame" x="29" y="0.0" width="54.5" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sU2-G9-nX5">
+                        <rect key="frame" x="29" y="15" width="65" height="2"/>
+                        <color key="trackTintColor" red="1" green="1" blue="1" alpha="0.25986622431506851" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </progressView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UEd-4X-kgU" secondAttribute="bottom" id="85o-BW-4Dm"/>
+                    <constraint firstItem="u70-gL-Uay" firstAttribute="leading" secondItem="g5i-s1-dqc" secondAttribute="trailing" constant="3" id="Ev2-q1-Iok"/>
+                    <constraint firstItem="sU2-G9-nX5" firstAttribute="trailing" secondItem="UEd-4X-kgU" secondAttribute="trailing" constant="-6" id="Ms5-nV-vXx"/>
+                    <constraint firstItem="UEd-4X-kgU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RGw-5A-3ut"/>
+                    <constraint firstItem="sU2-G9-nX5" firstAttribute="bottom" secondItem="g5i-s1-dqc" secondAttribute="bottom" constant="-3" id="Z72-T9-oR0"/>
+                    <constraint firstItem="g5i-s1-dqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="dRe-LU-aQ2"/>
+                    <constraint firstItem="g5i-s1-dqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="elE-4k-Fnk"/>
+                    <constraint firstItem="u70-gL-Uay" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iP5-8Z-Doe"/>
+                    <constraint firstItem="UEd-4X-kgU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jJT-JU-L5W"/>
+                    <constraint firstItem="sU2-G9-nX5" firstAttribute="leading" secondItem="g5i-s1-dqc" secondAttribute="trailing" constant="3" id="rBL-hR-429"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="taskImg" destination="g5i-s1-dqc" id="akj-MX-mpX"/>
+                <outlet property="taskProgressView" destination="sU2-G9-nX5" id="odo-Wu-wc3"/>
+                <outlet property="taskTitle" destination="u70-gL-Uay" id="rTM-hh-Yqi"/>
+            </connections>
+            <point key="canvasLocation" x="6.5217391304347831" y="147.65625"/>
+        </tableViewCell>
+    </objects>
+</document>

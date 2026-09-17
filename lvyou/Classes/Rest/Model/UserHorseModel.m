@@ -1,0 +1,20 @@
+// ////////////////////////////////////////////////////////////////////////////
+//
+// Copyright (c)  Shili Technology Co., Ltd.
+// All rights reserved.
+// http://www.shili.com
+//
+// ///////////////////////////////////////////////////////////////////////////
+//
+//  UserHorseModel.m
+//  beibei
+//
+//  Created by dev on 16/8/22.
+//  Copyright © 2016年 Shili. All rights reserved.
+//
+
+#import "UserHorseModel.h"
+
+@implementation UserHorseModel
+
+@end

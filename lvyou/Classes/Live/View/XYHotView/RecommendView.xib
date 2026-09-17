@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecommendView" id="U6b-Vx-4bR" customClass="RecommendView">
+            <rect key="frame" x="0.0" y="0.0" width="610" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帝皇推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-P6-A2i">
+                    <rect key="frame" x="36" y="9.5" width="65.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommend" translatesAutoresizingMaskIntoConstraints="NO" id="y8d-KM-mxY">
+                    <rect key="frame" x="7" y="8" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="3ZT-yU-cgq"/>
+                        <constraint firstAttribute="width" constant="22" id="jBg-qB-xcc"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYE-v4-DKF">
+                    <rect key="frame" x="0.0" y="46" width="610" height="117"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="117" id="kqE-5O-kUT"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKN-Vm-pRc">
+                    <rect key="frame" x="548" y="7" width="55" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="更多推荐&gt;&gt;">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="moreBtnAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="xen-Go-YZ1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="y8d-KM-mxY" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="7" id="2wc-AN-Oi9"/>
+                <constraint firstItem="y8d-KM-mxY" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="Ahg-S9-AiS"/>
+                <constraint firstItem="y8d-KM-mxY" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="8" id="QZh-dV-jeh"/>
+                <constraint firstItem="dPd-P6-A2i" firstAttribute="leading" secondItem="y8d-KM-mxY" secondAttribute="trailing" constant="7" id="RxN-qh-X2t"/>
+                <constraint firstItem="KYE-v4-DKF" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="UZa-UI-EJG"/>
+                <constraint firstItem="dPd-P6-A2i" firstAttribute="centerY" secondItem="y8d-KM-mxY" secondAttribute="centerY" id="b2B-YS-ZXS"/>
+                <constraint firstAttribute="trailing" secondItem="YKN-Vm-pRc" secondAttribute="trailing" constant="7" id="hyN-WZ-ifV"/>
+                <constraint firstItem="YKN-Vm-pRc" firstAttribute="centerY" secondItem="dPd-P6-A2i" secondAttribute="centerY" id="mrT-D5-bKc"/>
+                <constraint firstAttribute="bottom" secondItem="KYE-v4-DKF" secondAttribute="bottom" id="qDF-Fh-rcr"/>
+                <constraint firstAttribute="trailing" secondItem="KYE-v4-DKF" secondAttribute="trailing" id="swh-y9-TII"/>
+            </constraints>
+            <connections>
+                <outlet property="recommendBGView" destination="KYE-v4-DKF" id="qSz-XW-cmM"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="183.14732142857142"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="recommend" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,20 @@
+// ////////////////////////////////////////////////////////////////////////////
+//
+// Copyright (c)  Shili Technology Co., Ltd.
+// All rights reserved.
+// http://www.shili.com
+//
+// ///////////////////////////////////////////////////////////////////////////
+//
+//  AnchorModel.m
+//  beibei
+//
+//  Created by mac on 16/7/18.
+//  Copyright © 2016年 Shili. All rights reserved.
+//
+
+#import "AnchorModel.h"
+
+@implementation AnchorModel
+
+@end
